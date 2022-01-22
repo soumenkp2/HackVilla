@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "564120931399",
+    "project_id": "hackvilla-ef6b6",
+    "storage_bucket": "hackvilla-ef6b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564120931399:android:e4d28303d08f45920fb562",
+        "android_client_info": {
+          "package_name": "com.example.hackvilla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564120931399-7amhrrhdkcs8k8mc4i6qdms8prbshdh2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtnMO04Kynaqdtoznmn6MsF6Y3Ty8fgNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564120931399-7amhrrhdkcs8k8mc4i6qdms8prbshdh2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
