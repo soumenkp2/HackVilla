@@ -3,12 +3,18 @@ package com.example.hackvilla.fragmentclass;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.hackvilla.R;
+import com.example.hackvilla.customadapters.task_customadapter;
+import com.example.hackvilla.modelclass.model;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -61,6 +67,29 @@ public class Home extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View v =  inflater.inflate(R.layout.fragment_home, container, false);
+
+        RecyclerView task_recyclerview = (RecyclerView) v.findViewById(R.id.task_recycle);
+
+        task_recyclerview = (RecyclerView) v.findViewById(R.id.task_recycle);
+        task_recyclerview.setLayoutManager(new LinearLayoutManager(getContext(),RecyclerView.HORIZONTAL,false));
+        task_customadapter task_adapter = new task_customadapter(dataque_task(), getContext());
+        task_recyclerview.setAdapter(task_adapter);
+
+
+
+        return v;
+    }
+
+    public ArrayList<model> dataque_task()
+    {
+        ArrayList<model> holder = new ArrayList<>();
+        holder.add(new model(R.drawable.virus, "Inaugration", "1.20 - 2.20 pm", "Enroll"));
+        holder.add(new model(R.drawable.united, "Team Formation", "3 - 4 pm", "Enroll"));
+        holder.add(new model(R.drawable.subjects, "Java event", "4 - 5 pm", "Enroll"));
+        holder.add(new model(R.drawable.schoolbag, "Android event", "6 - 7 pm", "Enroll"));
+        holder.add(new model(R.drawable.performance, "Round-1", "8 - 9 pm", "Enroll"));
+        holder.add(new model(R.drawable.celebrating, "Finals", "10 - 12 pm", "Enroll"));
+        return holder;
     }
 }
