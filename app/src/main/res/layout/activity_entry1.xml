@@ -39,10 +39,11 @@
         android:layout_width="match_parent"
         android:layout_height="280dp"
         android:layout_marginTop="50dp"
+        android:padding="10dp"
         android:layout_below="@+id/title"
         android:id="@+id/schoolbag"
         android:layout_centerVertical="true"
-        android:src="@drawable/schoolbag"
+        android:src="@drawable/brainstorming"
         />
 
 
@@ -89,7 +90,7 @@
         android:layout_marginLeft="20sp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins"
-        android:text="Vidya Sagar allow's you to enroll on your subject courses with e-learning material"
+        android:text="Hackathons are these things where just all of the underdevelopement engineers get together. "
         android:textColor="#35084C"
         android:textSize="18sp" />
 
